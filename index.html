@@ -8,9 +8,27 @@
 </head>
 <body>
 
+  <!-- How to Play Section -->
+  <div id="how-to-play">
+    <h2>How to Play</h2>
+    <p>Manage your country’s economy by making strategic decisions. Trade, invest, and react to global events to grow your wealth!</p>
+    <ul>
+      <li><strong>Trade</strong> resources to gain money.</li>
+      <li><strong>Invest</strong> in technology, oil, and infrastructure.</li>
+      <li><strong>Pass</strong> your turn if you’re unsure.</li>
+      <li><strong>Next Turn</strong> triggers a global event that can affect all countries.</li>
+    </ul>
+  </div>
+
   <h1>Global Economy Game</h1>
-  <div id="countries"></div>
-  <button onclick="nextTurn()">Next Turn</button>
+
+  <div id="game-container">
+    <div id="countries"></div>
+    <div id="controls">
+      <button onclick="nextTurn()">Next Turn</button>
+    </div>
+  </div>
+
   <div id="log"></div>
 
   <script src="script.js"></script>
