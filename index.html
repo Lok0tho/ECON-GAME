@@ -8,28 +8,23 @@
 </head>
 <body>
 
-  <!-- How to Play Section -->
-  <div id="how-to-play">
-    <h2>How to Play</h2>
-    <p>Manage your country’s economy through trading, investing, and reacting to global events. Make decisions wisely!</p>
-    <ul>
-      <li><strong>Trade</strong> resources to earn money.</li>
-      <li><strong>Invest</strong> in technology, oil, infrastructure, and more to grow your economy.</li>
-      <li><strong>Pass</strong> your turn if you’re not ready to take action.</li>
-      <li><strong>Next Turn</strong> triggers global events like oil crises, tech booms, and more.</li>
-    </ul>
+  <!-- Country Selection Screen -->
+  <div id="country-selection">
+    <h1>Select Your Country</h1>
+    <button onclick="startGame('USA')">USA</button>
+    <button onclick="startGame('China')">China</button>
+    <button onclick="startGame('Brazil')">Brazil</button>
   </div>
 
-  <h1>Global Economy Game</h1>
-
-  <div id="game-container">
-    <div id="countries"></div>
+  <!-- Game Screen -->
+  <div id="game-container" style="display: none;">
+    <h1>Global Economy Game</h1>
+    <div id="country-info"></div>
     <div id="controls">
       <button onclick="nextTurn()">Next Turn</button>
     </div>
+    <div id="log"></div>
   </div>
-
-  <div id="log"></div>
 
   <script src="script.js"></script>
 </body>
